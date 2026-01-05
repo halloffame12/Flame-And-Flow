@@ -1,28 +1,18 @@
-
 import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import { Menu, X, Flame } from 'lucide-react';
 
-const Navbar: React.FC = () => {
+type NavLinkType = { name: string; path: string };
+
+interface NavbarProps {
+  links?: NavLinkType[]; // Optional prop for custom links
+}
+
+const Navbar: React.FC<NavbarProps> = ({ links: customLinks = [] }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 20);
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
-  // Lock scroll when menu is open to prevent background movement
-  useEffect(() => {
-    if (isOpen) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = 'unset';
-    }
-  }, [isOpen]);
-
-  const links = [
+  const defaultLinks: NavLinkType[] = [
     { name: 'HOME', path: '/' },
     { name: 'ABOUT', path: '/about' },
     { name: 'SERVICES', path: '/services' },
@@ -31,6 +21,21 @@ const Navbar: React.FC = () => {
     { name: 'PRICING', path: '/pricing' },
     { name: 'CONTACT', path: '/contact' },
   ];
+  const finalLinks = customLinks.length > 0 ? customLinks : defaultLinks;
+
+  useEffect(() => {
+    const handleScroll = () => setScrolled(window.scrollY > 20);
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+  }, [isOpen]);
 
   return (
     <>
@@ -52,12 +57,12 @@ const Navbar: React.FC = () => {
 
           {/* Desktop Links */}
           <div className="hidden lg:flex items-center gap-10">
-            {links.map(link => (
+            {finalLinks.map(link => (
               <NavLink
                 key={link.path}
                 to={link.path}
                 className={({ isActive }) => 
-                  `text-[10px] font-black tracking-[0.4em] transition-all hover:text-orange-500 uppercase ${
+                  `text-[10px] font-black tracking-[0.4em] transition-all hover:text-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-500 rounded uppercase ${
                     isActive ? 'text-orange-500' : 'text-gray-400'
                   }`
                 }
@@ -65,14 +70,17 @@ const Navbar: React.FC = () => {
                 {link.name}
               </NavLink>
             ))}
-            <NavLink to="/contact" className="bg-white hover:bg-orange-600 text-black hover:text-white px-8 py-3 rounded-none text-[10px] font-black tracking-[0.3em] transition-all shadow-xl uppercase">
+            <NavLink 
+              to="/contact" 
+              className="bg-white hover:bg-orange-600 text-black hover:text-white px-8 py-3 rounded-none text-[10px] font-black tracking-[0.3em] transition-all shadow-xl uppercase focus:outline-none focus:ring-2 focus:ring-white"
+            >
               Initiate
             </NavLink>
           </div>
 
           {/* Mobile Toggle Button */}
           <button 
-            className="lg:hidden text-white p-2 relative z-[1100]" 
+            className="lg:hidden text-white p-2 relative z-[1100] focus:outline-none focus:ring-2 focus:ring-orange-500 rounded" 
             aria-label="Toggle Menu" 
             onClick={() => setIsOpen(!isOpen)}
           >
@@ -81,8 +89,8 @@ const Navbar: React.FC = () => {
         </div>
       </nav>
 
-      {/* Mobile Menu Overlay - Solid Background, Highest Z-index */}
-      <div className={`lg:hidden fixed inset-0 bg-[#030303] z-[999] transition-all duration-500 flex flex-col items-center justify-center ${
+      {/* Mobile Menu Overlay - Adjusted z-index for safety */}
+      <div className={`lg:hidden fixed inset-0 bg-[#030303] z-[1001] transition-all duration-500 flex flex-col items-center justify-center ${
         isOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
       }`}>
         {/* Animated Background Decoration */}
@@ -92,14 +100,14 @@ const Navbar: React.FC = () => {
         </div>
 
         <div className="relative z-10 flex flex-col gap-8 sm:gap-10 items-center justify-center w-full px-8 text-center max-h-screen overflow-y-auto py-20">
-          {links.map((link, i) => (
+          {finalLinks.map((link, i) => (
             <NavLink
               key={link.path}
               to={link.path}
               onClick={() => setIsOpen(false)}
               style={{ transitionDelay: `${isOpen ? i * 50 : 0}ms` }}
               className={({ isActive }) => 
-                `text-4xl sm:text-5xl font-anime font-black transition-all transform tracking-tighter uppercase ${
+                `text-4xl sm:text-5xl font-anime font-black transition-all transform tracking-tighter uppercase focus:outline-none focus:ring-4 focus:ring-orange-500/50 ${
                   isOpen ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'
                 } ${isActive ? 'text-orange-500 scale-110' : 'text-white hover:text-orange-500'}`
               }
