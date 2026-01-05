@@ -1,0 +1,8 @@
+{
+  "name": "Flame & Flow Studio",
+  "description": "A premium anime-inspired digital studio website specializing in scalable web/mobile systems and cinematic visuals.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
