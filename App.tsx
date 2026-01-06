@@ -40,8 +40,8 @@ const AppContent: React.FC = () => {
 
   const socialLinks = [
     { label: '𝕏', url: 'https://x.com/' },
-    { label: 'Li', url: 'https://www.linkedin.com/in/sumit-chauhan-a4ba98325/' },
-    { label: 'Ig', url: 'https://instagram.com/' },
+    { label: 'Li', url: 'https://www.linkedin.com/company/flame-flow-studio' },
+    { label: 'Ig', url: 'https://www.instagram.com/flameflow.studio/' },
     { label: 'Gh', url: 'https://github.com/halloffame12' },
   ];
 
@@ -121,8 +121,8 @@ const AppContent: React.FC = () => {
             <ul className="space-y-4 text-[10px] font-bold tracking-[0.2em] text-gray-500 uppercase leading-relaxed">
               <li>HQ: NEW DELHI / REMOTE WORLD</li>
               <li>
-                <a href="mailto:sumitchauhan10062004@gmail.com" className="hover:text-orange-500 transition-colors lowercase">
-                  COMMS: sumitchauhan10062004@gmail.com
+                <a href="mailto:flameflowstudio@gmail.com" className="hover:text-orange-500 transition-colors lowercase">
+                  COMMS: flameflowstudio@gmail.com
                 </a>
               </li>
               <li>OPS: 24/7 SECURE MONITORING</li>
