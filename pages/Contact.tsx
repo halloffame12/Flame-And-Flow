@@ -1,17 +1,16 @@
 import React from 'react';
 import SectionTitle from '../components/SectionTitle';
-import { Mail, MapPin, Globe, Send, Shield, Zap, Terminal, Activity, Github, Linkedin, Phone } from 'lucide-react';
+import { Mail, MapPin, Globe, Send, Shield, Zap, Terminal, Activity, Instagram, Linkedin, Phone } from 'lucide-react';
 import { useForm, ValidationError } from '@formspree/react';
 
 const Contact: React.FC = () => {
   const [state, handleSubmit] = useForm("xkogevln");
-
   if (state.succeeded) {
     return (
       <div className="py-20 md:py-32">
         <div className="max-w-7xl mx-auto px-6">
           <SectionTitle subtitle="MANIFESTO" title="INITIATE THE MISSION" />
-         
+        
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 md:gap-24 mt-16 md:mt-24">
             {/* Contact Details Column */}
             <div className="lg:col-span-5 space-y-16 reveal">
@@ -20,7 +19,7 @@ const Contact: React.FC = () => {
                   Ready to transcend the ordinary? Describe your vision and we will engineer its digital manifestation.
                   <span className="text-orange-500 block mt-4 italic">"The protocol starts here."</span>
                 </p>
-               
+              
                 <div className="space-y-8">
                   <div className="flex items-center gap-6 group">
                     <div className="w-12 h-12 bg-[#0a0a0a] border border-white/10 flex items-center justify-center group-hover:border-orange-500 transition-all duration-500 shadow-lg">
@@ -28,7 +27,7 @@ const Contact: React.FC = () => {
                     </div>
                     <div>
                       <div className="text-[8px] font-black text-gray-600 tracking-[0.4em] uppercase mb-1 italic">ENCRYPTED COMMS</div>
-                      <a href="mailto:sumitchauhan10062004@gmail.com" className="text-white font-black text-sm md:text-base tracking-wider uppercase hover:text-orange-500 transition-colors">sumitchauhan10062004@gmail.com</a>
+                      <a href="mailto:flameflowstudio@gmail.com" className="text-white font-black text-sm md:text-base tracking-wider uppercase hover:text-orange-500 transition-colors">sumitchauhan10062004@gmail.com</a>
                     </div>
                   </div>
                   <div className="flex items-center gap-6 group">
@@ -37,7 +36,7 @@ const Contact: React.FC = () => {
                     </div>
                     <div>
                       <div className="text-[8px] font-black text-gray-600 tracking-[0.4em] uppercase mb-1 italic">SECURE VOICE</div>
-                      <div className="text-white font-black text-sm md:text-base tracking-wider uppercase">+91 7678331501</div>
+                      <div className="text-white font-black text-sm md:text-base tracking-wider uppercase">+91 94732 95260</div>
                     </div>
                   </div>
                   <div className="flex items-center gap-6 group">
@@ -46,16 +45,16 @@ const Contact: React.FC = () => {
                     </div>
                     <div>
                       <div className="text-[8px] font-black text-gray-600 tracking-[0.4em] uppercase mb-1 italic">PROFESSIONAL NODE</div>
-                      <a href="https://www.linkedin.com/in/sumit-chauhan-a4ba98325/" target="_blank" rel="noopener noreferrer" className="text-white font-black text-sm md:text-base tracking-wider uppercase hover:text-purple-500 transition-colors">LINKEDIN // SUMIT CHAUHAN</a>
+                      <a href="https://www.linkedin.com/company/flame-flow-studio" target="_blank" rel="noopener noreferrer" className="text-white font-black text-sm md:text-base tracking-wider uppercase hover:text-purple-500 transition-colors">LINKEDIN // FlameAndFlow</a>
                     </div>
                   </div>
                   <div className="flex items-center gap-6 group">
-                    <div className="w-12 h-12 bg-[#0a0a0a] border border-white/10 flex items-center justify-center group-hover:border-green-500 transition-all duration-500 shadow-lg">
-                      <Github className="w-5 h-5 text-gray-500 group-hover:text-green-500" />
+                    <div className="w-12 h-12 bg-[#0a0a0a] border border-white/10 flex items-center justify-center group-hover:border-pink-500 transition-all duration-500 shadow-lg">
+                      <Instagram className="w-5 h-5 text-gray-500 group-hover:text-pink-500" />
                     </div>
                     <div>
-                      <div className="text-[8px] font-black text-gray-600 tracking-[0.4em] uppercase mb-1 italic">ARTIFACT REPO</div>
-                      <a href="https://github.com/halloffame12" target="_blank" rel="noopener noreferrer" className="text-white font-black text-sm md:text-base tracking-wider uppercase hover:text-green-500 transition-colors">GITHUB // HALLOFFAME12</a>
+                      <div className="text-[8px] font-black text-gray-600 tracking-[0.4em] uppercase mb-1 italic">VISUAL FEED</div>
+                      <a href="https://www.instagram.com/flameflow.studio/" target="_blank" rel="noopener noreferrer" className="text-white font-black text-sm md:text-base tracking-wider uppercase hover:text-pink-500 transition-colors">INSTAGRAM // FLAMEFLOW.STUDIO</a>
                     </div>
                   </div>
                 </div>
@@ -79,7 +78,7 @@ const Contact: React.FC = () => {
             <div className="lg:col-span-7 reveal">
               <div className="bg-[#0a0a0a] border border-white/5 p-8 md:p-16 relative">
                 <div className="absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-orange-600 via-cyan-500 to-transparent" />
-               
+              
                 <div className="mb-12">
                    <h3 className="text-3xl font-anime font-black text-white uppercase tracking-tighter mb-4">MISSION INITIATED</h3>
                    <p className="text-gray-600 text-[10px] font-black tracking-widest uppercase italic">Transmission received and protocol engaged</p>
@@ -100,12 +99,11 @@ const Contact: React.FC = () => {
       </div>
     );
   }
-
   return (
     <div className="py-20 md:py-32">
       <div className="max-w-7xl mx-auto px-6">
         <SectionTitle subtitle="MANIFESTO" title="INITIATE THE MISSION" />
-       
+      
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 md:gap-24 mt-16 md:mt-24">
           {/* Contact Details Column */}
           <div className="lg:col-span-5 space-y-16 reveal">
@@ -114,7 +112,7 @@ const Contact: React.FC = () => {
                 Ready to transcend the ordinary? Describe your vision and we will engineer its digital manifestation.
                 <span className="text-orange-500 block mt-4 italic">"The protocol starts here."</span>
               </p>
-             
+            
               <div className="space-y-8">
                 <div className="flex items-center gap-6 group">
                   <div className="w-12 h-12 bg-[#0a0a0a] border border-white/10 flex items-center justify-center group-hover:border-orange-500 transition-all duration-500 shadow-lg">
@@ -144,12 +142,12 @@ const Contact: React.FC = () => {
                   </div>
                 </div>
                 <div className="flex items-center gap-6 group">
-                  <div className="w-12 h-12 bg-[#0a0a0a] border border-white/10 flex items-center justify-center group-hover:border-green-500 transition-all duration-500 shadow-lg">
-                    <Github className="w-5 h-5 text-gray-500 group-hover:text-green-500" />
+                  <div className="w-12 h-12 bg-[#0a0a0a] border border-white/10 flex items-center justify-center group-hover:border-pink-500 transition-all duration-500 shadow-lg">
+                    <Instagram className="w-5 h-5 text-gray-500 group-hover:text-pink-500" />
                   </div>
                   <div>
-                    <div className="text-[8px] font-black text-gray-600 tracking-[0.4em] uppercase mb-1 italic">ARTIFACT REPO</div>
-                    <a href="https://github.com/halloffame12" target="_blank" rel="noopener noreferrer" className="text-white font-black text-sm md:text-base tracking-wider uppercase hover:text-green-500 transition-colors">GITHUB // HALLOFFAME12</a>
+                    <div className="text-[8px] font-black text-gray-600 tracking-[0.4em] uppercase mb-1 italic">VISUAL FEED</div>
+                    <a href="https://www.instagram.com/flameflow.studio/" target="_blank" rel="noopener noreferrer" className="text-white font-black text-sm md:text-base tracking-wider uppercase hover:text-pink-500 transition-colors">INSTAGRAM // FLAMEFLOW.STUDIO</a>
                   </div>
                 </div>
               </div>
@@ -173,7 +171,7 @@ const Contact: React.FC = () => {
           <div className="lg:col-span-7 reveal">
             <div className="bg-[#0a0a0a] border border-white/5 p-8 md:p-16 relative">
               <div className="absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-orange-600 via-cyan-500 to-transparent" />
-             
+            
               <div className="mb-12">
                  <h3 className="text-3xl font-anime font-black text-white uppercase tracking-tighter mb-4">ENLIST YOUR VISION</h3>
                  <p className="text-gray-600 text-[10px] font-black tracking-widest uppercase italic">Secure end-to-end transmission protocol v4.2</p>
@@ -189,9 +187,9 @@ const Contact: React.FC = () => {
                       placeholder="ENTER NAME..."
                       className="w-full bg-transparent border-b border-white/10 pb-4 focus:border-orange-500 outline-none text-white transition-all placeholder:text-gray-800 font-black text-lg uppercase tracking-widest"
                     />
-                    <ValidationError 
-                      prefix="Name" 
-                      field="name" 
+                    <ValidationError
+                      prefix="Name"
+                      field="name"
                       errors={state.errors}
                       className="text-[9px] text-red-500 font-black tracking-wider uppercase mt-1"
                     />
@@ -205,9 +203,9 @@ const Contact: React.FC = () => {
                       placeholder="ENTER EMAIL..."
                       className="w-full bg-transparent border-b border-white/10 pb-4 focus:border-orange-500 outline-none text-white transition-all placeholder:text-gray-800 font-black text-lg uppercase tracking-widest"
                     />
-                    <ValidationError 
-                      prefix="Email" 
-                      field="email" 
+                    <ValidationError
+                      prefix="Email"
+                      field="email"
                       errors={state.errors}
                       className="text-[9px] text-red-500 font-black tracking-wider uppercase mt-1"
                     />
@@ -222,9 +220,9 @@ const Contact: React.FC = () => {
                     placeholder="DESCRIBE THE LEGENDARY IDEA IN DETAIL..."
                     className="w-full bg-transparent border-b border-white/10 pb-4 focus:border-orange-500 outline-none text-white transition-all placeholder:text-gray-800 font-black text-lg uppercase tracking-widest resize-none"
                   />
-                  <ValidationError 
-                    prefix="Message" 
-                    field="message" 
+                  <ValidationError
+                    prefix="Message"
+                    field="message"
                     errors={state.errors}
                     className="text-[9px] text-red-500 font-black tracking-wider uppercase mt-1"
                   />
@@ -252,5 +250,4 @@ const Contact: React.FC = () => {
     </div>
   );
 };
-
 export default Contact;
