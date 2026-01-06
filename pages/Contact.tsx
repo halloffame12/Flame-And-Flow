@@ -45,7 +45,7 @@ const Contact: React.FC = () => {
                     </div>
                     <div>
                       <div className="text-[8px] font-black text-gray-600 tracking-[0.4em] uppercase mb-1 italic">PROFESSIONAL NODE</div>
-                      <a href="https://www.linkedin.com/company/flame-flow-studio" target="_blank" rel="noopener noreferrer" className="text-white font-black text-sm md:text-base tracking-wider uppercase hover:text-purple-500 transition-colors">LINKEDIN // FlameAndFlow</a>
+                      <a href="https://www.linkedin.com/company/flame-flow-studio" target="_blank" rel="noopener noreferrer" className="text-white font-black text-sm md:text-base tracking-wider uppercase hover:text-purple-500 transition-colors">LINKEDIN // FLAMEFLOW STUDIO</a>
                     </div>
                   </div>
                   <div className="flex items-center gap-6 group">
@@ -138,7 +138,7 @@ const Contact: React.FC = () => {
                   </div>
                   <div>
                     <div className="text-[8px] font-black text-gray-600 tracking-[0.4em] uppercase mb-1 italic">PROFESSIONAL NODE</div>
-                    <a href="https://www.linkedin.com/in/sumit-chauhan-a4ba98325/" target="_blank" rel="noopener noreferrer" className="text-white font-black text-sm md:text-base tracking-wider uppercase hover:text-purple-500 transition-colors">LINKEDIN // SUMIT CHAUHAN</a>
+                    <a href="https://www.linkedin.com/company/flame-flow-studio" target="_blank" rel="noopener noreferrer" className="text-white font-black text-sm md:text-base tracking-wider uppercase hover:text-purple-500 transition-colors">LINKEDIN // FLAMEFLOW STUDIO</a>
                   </div>
                 </div>
                 <div className="flex items-center gap-6 group">
