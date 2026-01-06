@@ -27,7 +27,7 @@ const Contact: React.FC = () => {
                     </div>
                     <div>
                       <div className="text-[8px] font-black text-gray-600 tracking-[0.4em] uppercase mb-1 italic">ENCRYPTED COMMS</div>
-                      <a href="mailto:flameflowstudio@gmail.com" className="text-white font-black text-sm md:text-base tracking-wider uppercase hover:text-orange-500 transition-colors">sumitchauhan10062004@gmail.com</a>
+                      <a href="mailto:flameflowstudio@gmail.com" className="text-white font-black text-sm md:text-base tracking-wider uppercase hover:text-orange-500 transition-colors">flameflowstudio@gmail.com</a>
                     </div>
                   </div>
                   <div className="flex items-center gap-6 group">
@@ -120,7 +120,7 @@ const Contact: React.FC = () => {
                   </div>
                   <div>
                     <div className="text-[8px] font-black text-gray-600 tracking-[0.4em] uppercase mb-1 italic">ENCRYPTED COMMS</div>
-                    <a href="mailto:sumitchauhan10062004@gmail.com" className="text-white font-black text-sm md:text-base tracking-wider uppercase hover:text-orange-500 transition-colors">sumitchauhan10062004@gmail.com</a>
+                    <a href="mailto:flameflowstudio@gmail.com" className="text-white font-black text-sm md:text-base tracking-wider uppercase hover:text-orange-500 transition-colors">flameflowstudio@gmail.com</a>
                   </div>
                 </div>
                 <div className="flex items-center gap-6 group">
@@ -129,7 +129,7 @@ const Contact: React.FC = () => {
                   </div>
                   <div>
                     <div className="text-[8px] font-black text-gray-600 tracking-[0.4em] uppercase mb-1 italic">SECURE VOICE</div>
-                    <div className="text-white font-black text-sm md:text-base tracking-wider uppercase">+91 7678331501</div>
+                    <div className="text-white font-black text-sm md:text-base tracking-wider uppercase">+91 94732 95260</div>
                   </div>
                 </div>
                 <div className="flex items-center gap-6 group">
